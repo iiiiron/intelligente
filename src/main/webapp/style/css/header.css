@@ -1,0 +1,31 @@
+.header{
+    margin-bottom: 0;
+    height: 55px;
+    background-color: #fff;
+}
+
+.h-con {
+    width: 100%;
+    max-width: 1260px;
+    margin: 0 auto;
+    height: 55px;
+    background-color: #fff;
+    box-shadow: none;
+}
+
+.header-search{
+    position: absolute;
+    left: 386px;
+    top:12px;
+    width:230px;
+}
+
+.header-searchbtn{
+    position: absolute;
+    left: 570px;
+    top:12px;
+}
+.relative{
+    position: relative;
+}
+

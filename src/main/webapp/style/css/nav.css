@@ -1,0 +1,128 @@
+.left-nav{
+    width: 280px;
+    height: 440px;
+    position: absolute;
+    background-color: rgba(0,0,0,0.7);
+    z-index:9999;
+}
+.left-nav .item{
+    height: 90px;
+    width:280px;
+    line-height: 25px;
+    padding: 14px 15px 14px 14px;
+}
+.title{
+    font-size: 18px;
+    color:white;
+    margin-bottom: 10px;
+}
+.item:hover{
+    background-color: rgba(255,255,255,0.98);
+}
+.item:hover a{
+    color: black;
+}
+.itema{
+    color:white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.itema:hover{
+    color: #0a9a3d!important;
+}
+.title:hover{
+    color: #0a9a3d!important;
+}
+.titlediv{
+    margin-bottom: 10px;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.banner_container {
+    position: relative;
+    margin: 0px;
+    width:1200px;
+    height: 440px;
+    /* 超出隐藏 */
+    overflow: hidden;
+}
+
+ul.img_box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* html中的第一张图片不是我们想要显示，第二张才是我们轮播图的第一张图片因此要让这排图片往左移动一张图片的距离 */
+    transform: translateX(-400px);
+}
+
+.img_box li {
+    float: left;
+    list-style: none;
+}
+
+/* 图片大小 */
+.img_box li img {
+    width: 1600px;
+    height:440px;
+}
+
+/* 小圆点 */
+.sel_box {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sel_box li {
+    list-style: none;
+    /* 转换为行内块元素 -- 一行显示 */
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: pink;
+    margin-right: 3px;
+    border-radius: 5px;
+    transition: all 0.4s;
+}
+
+/* 左箭头 */
+.left_btn {
+    position: absolute;
+    top: 50%;
+    left: 280px;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 30px;
+    background-color: #fff;
+    line-height: 30px;
+    padding-left: 3px;
+    /* 将鼠标样式改为小手 */
+    cursor: pointer;
+}
+
+.right_btn {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 30px;
+    background-color: #fff;
+    line-height: 30px;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+
+/* 当前图片的小图点样式 */
+.sel_box .cur {
+    background-color: red!important;
+    transform: scale(1.3);
+}
+
